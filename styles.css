@@ -13,8 +13,22 @@ body {
     margin: 0;
 }
 
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    color: white;
+}
+
 img {
-    border: 10px line black;
+    border: 5px solid black;
+    border-radius: 4px;
     height: 200px;
     width: 200px;
 }
@@ -23,6 +37,14 @@ ul {
     display: flex;
     gap: 16px;
     list-style: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px;
 }
 
 .header {
@@ -71,6 +93,11 @@ ul {
     text-align: center;
 }
 
+.quote-background {
+    width: 100%;
+    background-color: rgba(50, 50, 50, .5);
+}
+
 .quote {
     display: flex;
     flex-direction: column;
@@ -78,7 +105,6 @@ ul {
     padding: 200px 0;
     width: 950px;
     margin: auto;
-    background-color: rgba(50, 50, 50, .5);
 }
 
 .quote .name {
@@ -94,9 +120,10 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 950px;
-    background-color: red;
+    background-color: firebrick;
     padding: 20px 50px;
     margin: 100px;
+    border-radius: 10px;
 }
 
 .footer {
